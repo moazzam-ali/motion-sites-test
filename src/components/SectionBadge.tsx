@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 
 export function SectionBadge({ children }: { children: React.ReactNode }) {

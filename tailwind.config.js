@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        heading: ["'Instrument Serif'", "serif"],
-        body: ["'Barlow'", "sans-serif"],
+        heading: ["var(--font-instrument-serif)", "'Instrument Serif'", "serif"],
+        body: ["var(--font-barlow)", "'Barlow'", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--background))",

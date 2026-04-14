@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { Zap, Palette, BarChart3, Shield, type LucideIcon } from "lucide-react";
 import { SectionBadge } from "./SectionBadge";
